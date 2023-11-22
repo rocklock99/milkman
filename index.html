@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milkman</title>
+    <script defer type="module" src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ea62d39ffa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <h1 id="milkman-header">Milkman</h1>
+      <div id="main-cow-button-container">
+        <button id="main-cow-button" type="button">
+          <img
+            id="main-cow-button-image"
+            src="./assets/cow.jpg"
+            alt="main cow photo"
+          />
+        </button>
+      </div>
+      <!-- bottles -->
+      <div id="milk-container">
+        <img
+          id="milk-icon"
+          class="icons"
+          src="./assets/milkbottle.svg"
+          alt="milk bottle icon"
+        />
+        <p id="milk-quantity" class="quantities"></p>
+        <button id="sell-milk-button" type="button">
+          Sell Milk +$<span id="milk-price"></span>
+        </button>
+      </div>
+      <!-- money -->
+      <div id="money-container">
+        <img
+          src="./assets/dollars.svg"
+          id="money-icon"
+          class="icons"
+          alt="money icon"
+        />
+        <p id="money-quantity-container">$<span id="money-quantity"></span></p>
+        <div id="producer-button-container">
+          <button id="worker-button" class="buy-buttons hidden" type="button">
+            hire worker -$25.00
+          </button>
+          <button id="cow-button" class="buy-buttons" type="button">
+            buy cow -$40.00
+          </button>
+          <button id="vet-button" class="buy-buttons" type="button">
+            hire veterinarian -$150.00
+          </button>
+          <button id="dist-button" class="buy-buttons" type="button">
+            hire distributor -$500.00
+          </button>
+          <button id="lobby-button" class="buy-buttons" type="button">
+            hire lobbyist -$1,000.00
+          </button>
+          <button id="pol-button" class="buy-buttons" type="button">
+            buy politician -$3,000.00
+          </button>
+        </div>
+      </div>
+      <!-- workers -->
+      <div id="worker-container" class="producer-containers hidden">
+        <img
+          id="worker-icon"
+          class="icons"
+          src="./assets/worker.svg"
+          alt="worker"
+        />
+        <p id="worker-quantity" class="quantities"></p>
+        <p id="worker-production-rate" class="production-rates">
+          <span id="worker-rate"></span> bottles/sec
+        </p>
+      </div>
+      <!-- cows -->
+      <div id="cow-container" class="producer-containers hidden">
+        <img
+          id="cow-icon"
+          class="icons"
+          src="./assets/cow2.svg"
+          alt="cow icon"
+        />
+        <p id="cow-quantity" class="quantities"></p>
+        <p id="cow-production-rate" class="production-rates">
+          <span id="cow-rate"></span> bottles/sec
+        </p>
+      </div>
+      <!-- vets -->
+      <div id="vet-container" class="producer-containers hidden">
+        <img
+          id="vet-icon"
+          class="icons"
+          src="./assets/vet.svg"
+          alt="veterinarian icon"
+        />
+        <p id="vet-quantity" class="quantities"></p>
+        <p id="vet-production-rate" class="production-rates">
+          <span id="vet-rate"></span> bottles/sec
+        </p>
+      </div>
+      <!-- distributors -->
+      <div id="dist-container" class="producer-containers hidden">
+        <img
+          id="dist-icon"
+          class="icons"
+          src="./assets/dist.svg"
+          alt="distributing truck icon"
+        />
+        <p id="dist-quantity" class="quantities"></p>
+        <p id="dist-production-rate" class="production-rates">
+          <span id="dist-rate"></span> bottles/sec
+        </p>
+      </div>
+      <!-- lobbyists -->
+      <div id="lobby-container" class="producer-containers hidden">
+        <img
+          id="lobby-icon"
+          class="icons"
+          src="./assets/lobby.svg"
+          alt="lobbyist icon"
+        />
+        <p id="lobby-quantity" class="quantities"></p>
+        <p id="lobby-production-rate" class="production-rates">
+          <span id="lobby-rate"></span> bottles/sec
+        </p>
+      </div>
+      <!-- politicians -->
+      <div id="pol-container" class="producer-containers hidden">
+        <img
+          id="pol-icon"
+          class="icons"
+          src="./assets/pol.svg"
+          alt="capital building icon"
+        />
+        <p id="pol-quantity" class="quantities"></p>
+        <p id="pol-production-rate" class="production-rates">
+          <span id="pol-rate"></span> bottles/sec
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
